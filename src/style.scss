@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Contrail+One&family=Lobster&display=swap");
+
+:root {
+  --white-text-color: rgb(240, 240, 240);
+  --gray-text-color: rgb(225, 225, 225);
+  --font-contrail: "Contrail One", cursive;
+  --font-lobster: "Lobster", cursive;
+}
+
+main {
+  min-height: 100vh;
+  max-width: 100vw;
+}
+
+h1 {
+  font-size: 4rem;
+  font-family: var(--font-contrail);
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: var(--white-text-color);
+  text-align: center;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.escape-button {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  height: 280px;
+  width: 280px;
+  border-radius: 50%;
+  font-family: var(--font-lobster);
+  text-decoration: underline;
+  font-size: 5rem;
+  color: var(--white-text-color);
+  transform: translate(-50%, -50%) rotateZ(-15deg);
+  background-color: red;
+  box-shadow: 2px 2px 5px black, -2px -2px 5px white;
+}
+
+.splash-screen img {
+  position: absolute;
+  right: 10%;
+  bottom: 6%;
+  height: 30px;
+  width: 30px;
+  opacity: 0.8;
+}
+
+.modal-card-content {
+  background-color: var(--white-text-color);
+}
+
+.loading-screen {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 25vh;
+
+  h2 {
+    font-size: 5rem;
+    font-family: var(--font-lobster);
+    color: var(--white-text-color);
+  }
+}
+
+progress {
+  max-width: 80%;
+}
+
+.results {
+  padding: 2rem;
+}
+
+.results-container {
+  min-height: 55vh;
+  flex-direction: column;
+}
+
+.result-card {
+  h2 {
+    font-family: "Contrail One";
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    margin-bottom: 0.4rem;
+    max-width: 90%;
+  }
+
+  .distance {
+    position: absolute;
+    font-family: var(--font-lobster);
+    top: 15px;
+    right: 12px;
+  }
+
+  img {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    right: 12px;
+    bottom: 15px;
+    background: white;
+    padding: 0.2rem;
+    border-radius: 4px;
+    object-fit: contain;
+    background-color: var(--white-text-color);
+  }
+}
+
+.debug {
+  position: absolute;
+  bottom: 0;
+}
+
+.results header {
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+
+  h2 {
+    font-size: 2.9rem;
+    font-family: var(--font-contrail);
+    color: var(--white-text-color);
+    line-height: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+
+.options {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  label {
+    max-width: 45%;
+    font-family: var(--font-lobster);
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+    color: var(--gray-text-color);
+  }
+
+  select {
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: var(--font-contrail);
+    margin-top: 0.7rem;
+    background-color: var(--white-text-color);
+    text-transform: capitalize;
+  }
+}
